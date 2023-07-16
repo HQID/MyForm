@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Form</title>
     <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
-    
+    <form action="index.html" class="form">
+        <h1>Sign up</h1>
+        <label for="name">Username</label>
+        <input type="text" name="name" class="textbox">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="textbox">
+        <label for="date">Birth Date</label>
+        <input type="date" name="date" class="textbox">
+        <label for="gender">Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="Female">
+            <label for="female">Female</label>
+        </div>
+        <label for="password">Password</label>
+        <input type="password" name="password" class="textbox">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" name="password" class="textbox">
+        <p>Already Have Account? <a href="index.html">Log in</a></p>
+        <button>Sign up</button>
+    </form>
 </body>
 </html>

@@ -58,18 +58,19 @@ input:focus {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    margin: 10px 0px 0px 3px;
+    margin-left: 3px;
 }
 
 .remember input {
     margin-top: 2.5px;
 }
 
-h4, a {
+p, a {
     text-align: center;
     font-size: 14px;
     text-decoration: none;
     color: black;
+    font-weight: 600;
 }
 
 button {
@@ -90,4 +91,11 @@ button:hover {
     background-color: #eaeaea;
     color: rgb(52, 136, 161);
     transition: .3s ease-in-out;
+}
+
+@media screen and (max-width: 360px) {
+    .form {
+        min-height: 50vh;
+        min-width: 300px;
+}
 }
