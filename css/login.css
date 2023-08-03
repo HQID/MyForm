@@ -15,7 +15,7 @@ body {
     background-position: center;
 }
 
-.form {
+#form {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -49,7 +49,7 @@ input:focus {
 }
 
 .label {
-    margin: 5px 0 15px 0px;
+    margin: 5px 0 0px 0px;
     position: relative;
     height: 25px;
 }
@@ -65,7 +65,7 @@ input:focus {
     margin-top: 2.5px;
 }
 
-p, a {
+.info, a {
     text-align: center;
     font-size: 14px;
     text-decoration: none;
@@ -91,6 +91,25 @@ button:hover {
     background-color: #eaeaea;
     color: rgb(52, 136, 161);
     transition: .3s ease-in-out;
+}
+
+small {
+    font-style: italic;
+    margin-top: 1px;
+    margin-left: 2px;
+    color: rgb(242, 70, 70);
+    opacity: 0;
+}
+
+.warn {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+.warn.error input {
+    border-color: #e74c3c;
 }
 
 @media screen and (max-width: 360px) {

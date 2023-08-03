@@ -7,18 +7,27 @@
     <link rel="stylesheet" href="css/login.css">
 </head>
 <body>
-    <form action="" class="form">
+    <form action="" id="form">
         <h1>Log In</h1>
-        <label>Username or Email</label>
-        <input type="text" name="name" class="label">
-        <label>Password</label>
-        <input type="password" name="password" class="label">
+        <div class="warn">
+            <label>Username or Email</label>
+            <input id="username" type="text" name="name" class="label">
+            <small>Masukkan Username!</small>
+        </div>
+        <div class="warn">
+            <label>Password</label>
+            <input id="password" type="password" name="password" class="label">
+            <small>Masukkan Password!</small>
+        </div>
+        
         <div class="remember">
             <input type="checkbox" name="checkbox">
             <label>Remember Me</label>
         </div>
             <button>Login</button>
-            <p><a href="signup.html">Dont have account yet?</a></p>
+            <p class="info"><a href="signup.html">Dont have account yet?</a></p>
     </form>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
