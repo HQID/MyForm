@@ -36,6 +36,7 @@ function setSuccessFor(input) {
     const warn = input.parentElement;
     const small = warn.querySelector('small');
     small.style.opacity = '0'
+    input.style.borderColor = 'rgb(52, 136, 161)'
 }
 
 
